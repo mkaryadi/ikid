@@ -16,6 +16,8 @@
 		C4EBC1DF282385F400CCB63B /* ikidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBC1DE282385F400CCB63B /* ikidTests.swift */; };
 		C4EBC1E9282385F400CCB63B /* ikidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBC1E8282385F400CCB63B /* ikidUITests.swift */; };
 		C4EBC1EB282385F400CCB63B /* ikidUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBC1EA282385F400CCB63B /* ikidUITestsLaunchTests.swift */; };
+		C4EBC1F8282447F500CCB63B /* JokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBC1F7282447F500CCB63B /* JokeViewController.swift */; };
+		C4EBC1FA282447FC00CCB63B /* PunchlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBC1F9282447FC00CCB63B /* PunchlineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C4EBC1E4282385F400CCB63B /* ikidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ikidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EBC1E8282385F400CCB63B /* ikidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ikidUITests.swift; sourceTree = "<group>"; };
 		C4EBC1EA282385F400CCB63B /* ikidUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ikidUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C4EBC1F7282447F500CCB63B /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
+		C4EBC1F9282447FC00CCB63B /* PunchlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchlineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				C4EBC1C7282385EF00CCB63B /* AppDelegate.swift */,
 				C4EBC1C9282385EF00CCB63B /* SceneDelegate.swift */,
 				C4EBC1CB282385EF00CCB63B /* ViewController.swift */,
+				C4EBC1F7282447F500CCB63B /* JokeViewController.swift */,
+				C4EBC1F9282447FC00CCB63B /* PunchlineViewController.swift */,
 				C4EBC1CD282385EF00CCB63B /* Main.storyboard */,
 				C4EBC1D0282385F300CCB63B /* Assets.xcassets */,
 				C4EBC1D2282385F300CCB63B /* LaunchScreen.storyboard */,
@@ -261,6 +267,8 @@
 				C4EBC1CC282385EF00CCB63B /* ViewController.swift in Sources */,
 				C4EBC1C8282385EF00CCB63B /* AppDelegate.swift in Sources */,
 				C4EBC1CA282385EF00CCB63B /* SceneDelegate.swift in Sources */,
+				C4EBC1F8282447F500CCB63B /* JokeViewController.swift in Sources */,
+				C4EBC1FA282447FC00CCB63B /* PunchlineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
