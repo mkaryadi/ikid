@@ -10,16 +10,25 @@ import UIKit
 class PunchlineViewController: UIViewController {
     var joke = ""
     var punchline = ""
+    var jokeVC : JokeViewController! = nil
+    @IBOutlet weak var punchlineLabel: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        punchlineLabel.text = punchline
         // Do any additional setup after loading the view.
     }
     
     @IBAction func back(_ sender: Any) {
-        NSLog("Go back!")
+        jokeVC.view.frame = view.frame
+        UIView.beginAnimations("View Flip", context: nil)
+        UIView.setAnimationDuration(0.4)
+        UIView.setAnimationCurve(.easeInOut)
+        UIView.setAnimationTransition(.flipFromLeft, for: jokeVC.root.view, cache: true)
+        jokeVC.root.switchVCs(from: jokeVC.root.currentJoke, to: jokeVC)
+        UIView.commitAnimations()
+        
     }
     
     /*

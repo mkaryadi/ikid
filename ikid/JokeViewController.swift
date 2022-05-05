@@ -23,6 +23,7 @@ class JokeViewController: UIViewController {
         let punchlineVC = storyboard?.instantiateViewController(withIdentifier: "Punchline") as! PunchlineViewController
         punchlineVC.joke = joke
         punchlineVC.punchline = punchline
+        punchlineVC.jokeVC = self
         return punchlineVC
     }
     
@@ -44,7 +45,12 @@ class JokeViewController: UIViewController {
         let punchLineVC = buildPunchlineVC()
         let currentJoke = root.currentJoke
         punchLineVC.view.frame = view.frame
+        UIView.beginAnimations("View Flip", context: nil)
+        UIView.setAnimationDuration(0.4)
+        UIView.setAnimationCurve(.easeInOut)
+        UIView.setAnimationTransition(.flipFromRight, for: root.view, cache: true)
         root.switchVCs(from: currentJoke, to: punchLineVC)
+        UIView.commitAnimations()
     }
     
     /*

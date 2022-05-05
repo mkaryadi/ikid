@@ -45,14 +45,14 @@ class ViewController: UIViewController {
         var punchline = ""
         switch sender.title {
         case "Good":
-            setup = "Here's a good setup"
-            punchline = "Here's a good punchline"
+            setup = "What's the best part about Switzerland?"
+            punchline = "I don't know, but the flag is a big plus!"
         case "Pun":
-            setup = "Here's a pun setup"
-            punchline = "Here's a pun punchline"
+            setup = "What's the difference between a hippo and a zippo?"
+            punchline = "One's really heavy and the other is a little lighter."
         case "Dad":
-            setup = "Here's a dad setup"
-            punchline = "Here's a dad punchline"
+            setup = "My friend asked me what's upstairs..."
+            punchline = "...I told them the stairs don't talk!"
         default:
             setup = "Error"
             punchline = "Error"

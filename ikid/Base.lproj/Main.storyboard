@@ -58,8 +58,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Punchline here!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OE-lw-G7Y">
-                                <rect key="frame" x="148" y="437.5" width="118" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Punchline here!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OE-lw-G7Y">
+                                <rect key="frame" x="0.0" y="438" width="414" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -68,17 +68,25 @@
                                 <rect key="frame" x="20" y="771" width="45.5" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system"/>
+                                <connections>
+                                    <action selector="back:" destination="tmf-yC-W76" eventType="touchUpInside" id="65B-se-ij1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pUT-5L-VP4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="1OE-lw-G7Y" firstAttribute="centerX" secondItem="GUT-Ee-0Ef" secondAttribute="centerX" id="2xX-Og-jCS"/>
+                            <constraint firstItem="1OE-lw-G7Y" firstAttribute="leading" secondItem="pUT-5L-VP4" secondAttribute="leading" id="3tc-MT-v4u"/>
                             <constraint firstItem="1OE-lw-G7Y" firstAttribute="centerY" secondItem="GUT-Ee-0Ef" secondAttribute="centerY" id="cha-7o-2Rx"/>
                             <constraint firstItem="pUT-5L-VP4" firstAttribute="bottom" secondItem="lxp-PI-kZF" secondAttribute="bottom" constant="60" id="opa-T4-dfb"/>
                             <constraint firstItem="lxp-PI-kZF" firstAttribute="leading" secondItem="pUT-5L-VP4" secondAttribute="leading" constant="20" id="xYU-eb-QsG"/>
+                            <constraint firstItem="pUT-5L-VP4" firstAttribute="trailing" secondItem="1OE-lw-G7Y" secondAttribute="trailing" id="yHY-jz-t50"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="punchlineLabel" destination="1OE-lw-G7Y" id="2rr-2L-ocu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jru-Kq-yC2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,8 +100,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setup here!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwT-TK-ZCl">
-                                <rect key="frame" x="163" y="437.5" width="88" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setup here!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwT-TK-ZCl">
+                                <rect key="frame" x="0.0" y="438" width="414" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -111,13 +119,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kQs-n5-y5N" firstAttribute="trailing" secondItem="Ewd-Ga-JVk" secondAttribute="trailing" constant="20" id="2Ap-IH-qcx"/>
+                            <constraint firstItem="BwT-TK-ZCl" firstAttribute="leading" secondItem="kQs-n5-y5N" secondAttribute="leading" id="B8m-BV-zVp"/>
                             <constraint firstItem="BwT-TK-ZCl" firstAttribute="centerX" secondItem="ojD-oZ-gNt" secondAttribute="centerX" id="Dct-FW-J1a"/>
+                            <constraint firstItem="kQs-n5-y5N" firstAttribute="trailing" secondItem="BwT-TK-ZCl" secondAttribute="trailing" id="Nfv-1c-JaI"/>
                             <constraint firstItem="BwT-TK-ZCl" firstAttribute="centerY" secondItem="ojD-oZ-gNt" secondAttribute="centerY" id="b2c-Rn-GXi"/>
                             <constraint firstItem="kQs-n5-y5N" firstAttribute="bottom" secondItem="Ewd-Ga-JVk" secondAttribute="bottom" constant="60" id="rwY-gT-v5n"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="setupLabel" destination="BwT-TK-ZCl" id="QqA-tZ-5Vj"/>
+                        <outlet property="setupLabel" destination="BwT-TK-ZCl" id="MXq-dp-4am"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R9h-Wi-ZUY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
